@@ -6,3 +6,6 @@ from django.shortcuts import render
 def index(request):
     bbs = Bb.objects.all()
     return render(request, 'index.html', {'bbs': bbs})
+
+
+def rubric_bbs(request):
